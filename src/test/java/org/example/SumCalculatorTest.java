@@ -1,8 +1,6 @@
 package org.example;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class SumCalculatorTest {
@@ -19,17 +17,6 @@ class SumCalculatorTest {
     public void testSum3() {
         int result = calculator.sum(3);
         assertEquals(6, result, "Сума чисел від 1 до 3 має бути 6");
-    }
-
-
-
-    @Test
-    void getNumber() {
-    }
-
-    @Test
-    public  int sum(int n) {
-        return n;
     }
 
     @Test

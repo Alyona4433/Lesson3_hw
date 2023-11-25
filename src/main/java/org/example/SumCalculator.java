@@ -1,15 +1,16 @@
 package org.example;
 
-import java.util.Scanner;
+
 
 public class SumCalculator {
 
+    //checking for 0
     public static void testSumWithZero(int n) {
         if (n<=0) {
             throw new IllegalArgumentException("The number should be more than 0");
         }
     }
-
+// sum calculation logic
     public static int sum (int n){
         if (n<=0) {
             throw new IllegalArgumentException("The number should be more than 0");
@@ -24,19 +25,5 @@ public class SumCalculator {
 
     }
 
-    public static int getNumber() {
-        Scanner scanner = new Scanner(System.in);
 
-        int n = -1;
-
-        while(n <0) {
-            try {
-                System.out.println("Enter any number: ");
-                n = scanner.nextInt();
-            } catch (NumberFormatException e) {
-                System.out.println("Please enter valid input value = ");
-                scanner.nextLine();
-            }
-        } return n;
-    }
 }
