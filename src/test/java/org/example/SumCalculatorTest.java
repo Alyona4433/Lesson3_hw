@@ -8,9 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class SumCalculatorTest {
     private SumCalculator calculator = new SumCalculator();
 
-    @BeforeEach
-    public void setUp() {
-    }
 
     @Test
     public void testSum1() {
@@ -33,5 +30,13 @@ class SumCalculatorTest {
     @Test
     public  int sum(int n) {
         return n;
+    }
+
+    @Test
+    public void testSumWithZero() {
+        int n = 0;
+        IllegalArgumentException illegalArgumentException =
+                assertThrows(IllegalArgumentException.class, ()
+                -> calculator.sum(n));
     }
 }
