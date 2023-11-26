@@ -1,9 +1,7 @@
 package org.example;
-import org.json.JSONObject;
 
 public class Main {
     public static void main(String[] args) {
-        JSONObject jsonObject = new JSONObject();
 
         int userDigit = InputNumber.getNumber();
         System.out.println("You input the number = " + userDigit);
